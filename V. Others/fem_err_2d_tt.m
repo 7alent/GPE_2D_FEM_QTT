@@ -280,11 +280,11 @@ function err = fem_err_2d_tt(v, w, err_type, varargin)
     % Case I: Both v and w are function handles
     if strcmp(input_type, 'Both are functions')
         % Normalization
-        norm_sq_v = norm_sq2(v, xy_ep, err_type, gqr);
+        norm_sq_v = normsq_2d(v, xy_ep, err_type, gqr);
         if norm_sq_v ~= 0
             v = @(x, y)(v(x, y)/sqrt(norm_sq_v));
         end
-        norm_sq_w = norm_sq2(w, xy_ep, err_type, gqr);
+        norm_sq_w = normsq_2d(w, xy_ep, err_type, gqr);
         if norm_sq_w ~= 0
             w = @(x, y)(w(x, y)/sqrt(norm_sq_w));
         end
@@ -299,11 +299,11 @@ function err = fem_err_2d_tt(v, w, err_type, varargin)
     % Case II: v/w and w/v are a function handle and a vector resp.
     if strcmp(input_type, 'Function and vector')
         % Normalization
-        norm_sq_v = norm_sq2(v, xy_ep, err_type, gqr);
+        norm_sq_v = normsq_2d(v, xy_ep, err_type, gqr);
         if norm_sq_v ~= 0
             v = @(x, y)(v(x, y)/sqrt(norm_sq_v));
         end
-        norm_sq_w = norm_sq2(w, xy_ep, err_type, gqr);
+        norm_sq_w = normsq_2d(w, xy_ep, err_type, gqr);
         if norm_sq_w ~= 0
             w = w/sqrt(norm_sq_w);
         end
