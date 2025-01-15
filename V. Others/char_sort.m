@@ -4,7 +4,7 @@
 % CC = CHAR_SORT(CC, REF)
 %   Given a character cell cc, sort it according to reference cell ref,
 %   e.g. if cc = {'d', 'b', 'f'}, ref = {'a', 'b', 'c', 'd', 'e', 'f'}, 
-%   then the output will {'b', 'd', 'f'}
+%   then the output will be {'b', 'd', 'f'}
 % 
 %   [Input Argument]
 %       cc - Cell, character cell to be sorted
