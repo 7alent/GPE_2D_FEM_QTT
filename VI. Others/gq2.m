@@ -1,5 +1,5 @@
 % 
-% Calculate Legendre Gauss Quadrature
+% Calculate Legendre Gauss Quadrature for 2-D Functions
 % 
 % output = GQ2(INTEGRAND, INTERVAL, RULE)
 %   Given a 2-D function, calulate its double integral on a certain area
