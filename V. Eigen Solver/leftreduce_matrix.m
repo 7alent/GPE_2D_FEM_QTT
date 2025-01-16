@@ -1,5 +1,5 @@
 %
-% This function is used in dmrg_eig(), it's written as an independent .m
+% This function is used in dmrg2(), it's written as an independent .m
 % file for testing purpose
 %
 
