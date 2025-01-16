@@ -1,5 +1,5 @@
 % 
-% Calculate Square of the Norm of a Function
+% Calculate Square of the Norm of a 2-D Function
 % 
 % OUTPUT = NORMSQ_2D(V, INTERVAL, NORM_TYPE, RULE, VARARGIN)
 %   Given a 2-D functions in the form of a vector/matrix (function values 
